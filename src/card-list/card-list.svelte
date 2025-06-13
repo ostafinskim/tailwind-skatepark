@@ -1,13 +1,10 @@
-{#snippet card(title, description)}
-  <div>
-    <h2>{title}</h2>
-    <p>{description}</p>
-  </div>
-{/snippet}
+<script lang="ts">
+  import Card from '../card/card.svelte';
+</script>
 
 <div>
-  {@render card('Card Title', 'This is a description of the card.')}
-  {@render card('Another Card', 'This is another description of a different card.')}
-  {@render card('Third Card', 'This is a description of the third card.')}
-  {@render card('Fourth Card', 'This is a description of the fourth card.')}
+  <Card title="Card Title" description="This is a description of the card." />
+  <Card title="Another Card" description="This is another description of a different card." />
+  <Card title="Third Card" description="This is a description of the third card." />
+  <Card title="Fourth Card" description="This is a description of the fourth card." />
 </div>
