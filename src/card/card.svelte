@@ -1,8 +1,8 @@
 <script>
-  const { title = 'Card Title', description = '', children } = $props();
+  const { title = 'Card Title', description = '' } = $props();
 </script>
 
 <div>
   <h2>{title}</h2>
-  <p>{@render children?.()}</p>
+  <p>{description}</p>
 </div>

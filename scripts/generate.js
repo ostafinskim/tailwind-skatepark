@@ -28,8 +28,8 @@ const content = template
 
 await mkdir(`src/${filename}`, { recursive: true });
 
-await writeFile(`${directory}}.svelte`, `<div>Hello, ${componentName}!</div>`);
-await writeFile(`${directory}}.stories.svelte`, content);
+await writeFile(`${directory}.svelte`, `<div>Hello, ${componentName}!</div>`);
+await writeFile(`${directory}.stories.svelte`, content);
 
 console.log(
   chalk.green(

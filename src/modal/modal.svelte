@@ -3,13 +3,8 @@
 
   let dialog;
 
-  function openModal() {
-    dialog.showModal();
-  }
-
-  function closeModal() {
-    dialog.close();
-  }
+  const openModal = () => dialog.showModal();
+  const closeModal = () => dialog.close();
 </script>
 
 <div>
@@ -19,7 +14,7 @@
     <div>
       <header>
         <h2>{title}</h2>
-        <button onclick={closeModal}>×</button>
+        <button onclick={closeModal}>ⓧ</button>
       </header>
       <main>
         <p>{content}</p>
